@@ -1,0 +1,99 @@
+/**
+ * @name CyanPack
+ * @author GumballGardas
+ * @version 1.0.0
+ * @description CyanPack 1.0 Modern
+ * @authorId GumballGardas
+ * @source https://github.com/GumballGardas/CyanPack
+ */
+
+@import url("https://animaz2025.github.io/cyanpack/main.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+:root {
+  /* ACCENT COLORS */
+  --main-color: #00f7ff; /* cyan main */
+  --hover-color: #00c9d1; /* cyan hover */
+  --success-color: #00ffa3;
+  --danger-color: #ff3b3b;
+
+  /* STATUS COLORS */
+  --online-color: #00ffcc;
+  --idle-color: #ffd000;
+  --dnd-color: #ff4a4a;
+  --streaming-color: #8000ff;
+  --offline-color: #888888;
+
+  /* APP BACKGROUND */
+  --background-shading-percent: 100%;
+  --background-image: url(https://i.hizliresim.com/piteumd.png);
+  --background-position: center;
+  --background-size: cover;
+  --background-attachment: fixed;
+  --background-filter: brightness(105%) contrast(105%) saturate(150%);
+
+  /* USER POPOUT */
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+
+  /* USER MODAL */
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-filter: var(--background-filter);
+
+  /* HOME ICON */
+  --home-icon: url("https://i.imgur.com/knu0gJQ.png");
+  --home-size: cover;
+
+  /* FONTS */
+  --main-font: "Rubik", sans-serif;
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
+
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-normal);
+  --channel-muted: var(--interactive-muted);
+  --channel-hover: var(--hover-color);
+  --channel-selected: #ffffff;
+  --channel-selected-bg: rgba(0, 247, 255, 0.1);
+  --channel-unread: var(--main-color);
+  --channel-unread-hover: var(--hover-color);
+
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color);
+}
+
+/* CLEARVISION VERSİYON YAZISINI DEĞİŞTİR */
+.info__2debe::after {
+  content: "CyanPack 1.0 by GumballGardas";
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.3333333333;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.visual-refresh:not(.platform-osx) .leading_c38106::before {
+  content: "CyanPack by gumballgardas";
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-default);
+  order: 2;
+  filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+.visual-refresh:not(.platform-osx) .leading_c38106::after {
+  content: "1.0";
+  margin-top: -5px;
+  margin-left: 5px;
+  font-family: var(--code-font);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  order: 3;
+}
